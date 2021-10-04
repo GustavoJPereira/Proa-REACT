@@ -1,17 +1,23 @@
 import './App.css';
 
-var altura = parseFloat(prompt("Digite a altura do paralelepipedo em metros: "));
-var comprimento = parseFloat(prompt("Digite o comprimento do paralelepipedo em metros: "));
-var profundidade = parseFloat(prompt("Digite a profundidade do paralelepipedo em metros: "));
+var a = parseInt(prompt("Digite o valor de A: "));
+var b = parseInt(prompt("Digite o valor de B: "));
+var  dif;
 
-function App26(){
+if (a > b) {
+    dif = Math.pow((a - b), 2)
+} else {
+    dif = Math.pow((b - a), 2)
+}
+
+function App27(){
 
     return(
         <div className = "App1">
-            <p> O volume do paralelepipedo é {altura * comprimento * profundidade} m³</p>
+            <p> O quadrado da diferença entre A e B é  {dif}</p>
         </div>
     );
 
 }
 
-export default App26;   
+export default App27;   
