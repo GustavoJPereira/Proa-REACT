@@ -1,19 +1,19 @@
 import './App.css';
 
-var celsius = parseInt(prompt("Digite o valor em graus Celsius: "));
-               
+var fahrenheit = parseInt(prompt("Digite o valor em graus Faahrenheit: "));
+              
 function resposta(){
-    return (9 * celsius + 160) / 5;
+    return 5 * (fahrenheit - 32) / 9;
 }
 
-function App19(){
+function App20(){
 
     return(
         <div className = "App1">
-            <p>{celsius}º Celsius corresponde a: {resposta()}º Fahrenheint.</p>
+            <p>{fahrenheit}º Fahrenheit corresponde a: {resposta()}º Celsius.</p>
         </div>
     );
 
 }
 
-export default App19;   
+export default App20;   
