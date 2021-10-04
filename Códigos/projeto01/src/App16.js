@@ -1,16 +1,17 @@
 import './App.css';
 
-var precoInicial = parseInt(prompt("Digite o custo de fábrica do carro: "));
+var salarioFixo = parseInt(prompt("Digite o salário fixo do vendedor : "));
+        var vendas = parseInt(prompt("Digite o valor das vendas desse mês feitas pelo vendedor : "));
 
 function resposta(){
-    return precoInicial + (precoInicial * 0.28) + (precoInicial * 0.45);
+    return salarioFixo + (vendas * 0.05);
 }
 
 function App16(){
 
     return(
         <div className = "App1">
-            <p>O valor final que o consumidor pagará será de: R$ {resposta().toFixed(2)} </p>
+            <p>O salário final do vendedor será de R$ {resposta().toFixed(2)} </p>
         </div>
     );
 
